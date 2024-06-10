@@ -1,4 +1,5 @@
 # Processes
 
-```
+```bash
+ps aux
 ```
