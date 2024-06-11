@@ -57,6 +57,7 @@
   * [Linux](shells/linux.md)
   * [PHP](shells/php.md)
   * [Msfvenom shell reverse tcp](shells/msfvenom-shell-reverse-tcp.md)
+  * [Windows](shells/windows.md)
 * [Exploits](exploits/README.md)
   * [Drupalgeddon2](exploits/drupalgeddon2.md)
 * [Password Cracking](password-cracking/README.md)
@@ -68,3 +69,4 @@
 * [Linux Commands](linux-commands.md)
 * [Python File Server](python-file-server.md)
 * [Download files](download-files.md)
+* [Windows Commands](windows-commands.md)
