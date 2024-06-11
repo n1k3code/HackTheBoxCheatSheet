@@ -2,7 +2,7 @@
 
 Options
 
-```
+```bash
 --wordlist[=FILE] --stdin  Wordlist mode, read words from FILE or stdin
                   --pipe   like --stdin, but bulk reads, and allows rules
 --format=[NAME|CLASS][,..] Force hash of type NAME. The supported formats can
@@ -13,7 +13,7 @@ Options
 
 Formats
 
-```
+```bash
 --format=krb5asrep
 --format=bcrypt
 --format=NT
@@ -24,6 +24,6 @@ Formats
 
 Example
 
-```
+```bash
 john hashes --wordlist=/usr/share/wordlists/rockyou.txt
 ```

@@ -2,13 +2,13 @@
 
 Enumeration
 
-```
+```bash
 sudo nmap -p 59777 --open -sS -Pn
 ```
 
 Exploit
 
-```
+```bash
 msfconsole
 search es file explorer
 

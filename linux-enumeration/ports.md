@@ -1,5 +1,5 @@
 # Ports
 
-```
+```bash
 ss -ntpl
 ```

