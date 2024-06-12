@@ -1,5 +1,14 @@
 # Mimikatz
 
+## OPTIONS:
+
+```bash
+dpapi::cred decrypts DPAPI saved credential such as RDP, Scheduled tasks, etc (cf. dumping DPAPI secrets).
+dpapi::masterkey describes a Masterkey file and unprotects each Masterkey (key depending). In other words, it can decrypt and request masterkeys from active directory (cf. dumping DPAPI secrets).
+```
+
+***
+
 **With mimikatz the credential file is examined, which reveals the corresponding masterkey (guidMasterKey)**
 
 ```bash
