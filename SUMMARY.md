@@ -11,6 +11,7 @@
   * [Sudo version](linux-enumeration/sudo-version.md)
   * [Sudo Bypass](linux-enumeration/sudo-bypass.md)
 * [Windows Enumeration](windows-enumeration/README.md)
+  * [Mimikatz](windows-enumeration/mimikatz.md)
   * [Netstat](windows-enumeration/netstat.md)
   * [Passwords](windows-enumeration/passwords.md)
   * [Processes](windows-enumeration/processes.md)
