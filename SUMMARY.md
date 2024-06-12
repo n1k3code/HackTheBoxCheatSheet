@@ -20,6 +20,7 @@
   * [Users](windows-enumeration/users.md)
   * [Groups](windows-enumeration/groups.md)
 * [Web Enumeration](web-enumeration/README.md)
+  * [HTTP](web-enumeration/http.md)
   * [SSTI](web-enumeration/ssti.md)
   * [Files](web-enumeration/files.md)
   * [Subdomains](web-enumeration/subdomains.md)
