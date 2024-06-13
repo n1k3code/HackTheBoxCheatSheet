@@ -27,3 +27,10 @@ Example
 ```bash
 john hashes --wordlist=/usr/share/wordlists/rockyou.txt
 ```
+
+
+
+```bash
+echo "webapi_user:\$1\$vVoNCsOl\$lMtBS6GL2upDbR4Owhzyc0" > hash
+john --wordlist=/usr/share/wordlists/rockyou.txt hash
+```
