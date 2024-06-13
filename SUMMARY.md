@@ -3,6 +3,7 @@
 * [Home](README.md)
 * [Bloodhound](bloodhound.md)
 * [Linux Enumeration](linux-enumeration/README.md)
+  * [htpasswd](linux-enumeration/htpasswd.md)
   * [Partitions](linux-enumeration/partitions.md)
   * [Kernel](linux-enumeration/kernel.md)
   * [SUID](linux-enumeration/suid.md)
@@ -96,3 +97,4 @@
 * [Crypto](crypto.md)
 * [GraphQL](graphql.md)
 * [Pivoting](pivoting.md)
+* [File Utils](file-utils.md)
