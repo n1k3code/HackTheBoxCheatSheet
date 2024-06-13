@@ -82,6 +82,7 @@
   * [John](password-cracking/john.md)
   * [ZIP](password-cracking/zip.md)
 * [Linux Privilege Scalation](linux-privilege-scalation/README.md)
+  * [Doas](linux-privilege-scalation/doas.md)
   * [capsh](linux-privilege-scalation/capsh.md)
   * [Kernel 4.4.0-116-generic](linux-privilege-scalation/kernel-4.4.0-116-generic.md)
   * [Pyps](linux-privilege-scalation/pyps.md)
