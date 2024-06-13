@@ -27,6 +27,8 @@
   * [Users](windows-enumeration/users.md)
   * [Groups](windows-enumeration/groups.md)
 * [Web Enumeration](web-enumeration/README.md)
+  * [Laravel](web-enumeration/laravel.md)
+  * [Strapi](web-enumeration/strapi.md)
   * [HTTP](web-enumeration/http.md)
   * [SSTI](web-enumeration/ssti.md)
   * [Files](web-enumeration/files.md)
@@ -93,3 +95,4 @@
 * [Windows Commands](windows-commands.md)
 * [Crypto](crypto.md)
 * [GraphQL](graphql.md)
+* [Pivoting](pivoting.md)
