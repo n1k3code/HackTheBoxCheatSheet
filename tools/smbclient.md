@@ -1,5 +1,18 @@
 # smbclient
 
+## OPTIONS <a href="#options" id="options"></a>
+
+```bash
+smbclient:
+-L: Get a list of shares available
+-U: [DOMAIN/]USERNAME[%PASSWORD] Set the network username
+smbmap:
+-H: IP of host
+-p: Password or NTLM hash
+-d: Domain name (default WORKGROUP)
+-u: Username, if omitted null session assumed
+```
+
 List shares
 
 ```bash
@@ -45,3 +58,32 @@ Recursive download
 smbclient //10.10.11.222/Development -N -c 'prompt OFF;recurse ON;lcd
 '~/Desktop/HTB_work/Content/Boxes/Authority/smb_contents/';mget *'
 ```
+
+**smbclient can now be used to enumerate any available file shares.**
+
+```bash
+smbclient -L //10.10.10.10
+```
+
+**connect to enumerated share**
+
+```bash
+smbclient //10.10.10.100/Replication
+```
+
+**With valid credentials for the active.htb domain, further enumeration can be undertaken.**
+
+```bash
+smbmap -d active.htb -u SVC_TGS -p GPPstillStandingStrong2k18 -H 10.10.10.100
+```
+
+**connect to users shares with valid user%password**
+
+```bash
+smbclient -U SVC_TGS%GPPstillStandingStrong2k18 //10.10.10.100/Users
+```
+
+
+
+
+
