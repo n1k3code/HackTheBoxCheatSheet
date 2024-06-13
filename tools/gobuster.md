@@ -21,7 +21,6 @@ Wordlists
 ```bash
 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 -w /usr/share/wordlists/dirb/common.txt
--w /usr/share/wordlists/vhosts.txt
 ```
 
 Sintax
@@ -53,10 +52,3 @@ gobuster vhost -u 'http://hat-valley.htb' -w /usr/share/wordlists/vhosts.txt
 ```bash
 gobuster -t 50 -k -u <target> -w <wordlist> -x php
 ```
-
-100 Threads
-
-```bash
-gobuster dir -u <target> -w <wordlist> -t 100 
-```
-
