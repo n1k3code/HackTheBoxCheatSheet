@@ -28,6 +28,8 @@
   * [Users](windows-enumeration/users.md)
   * [Groups](windows-enumeration/groups.md)
 * [Web Enumeration](web-enumeration/README.md)
+  * [Spring Cloud Function](web-enumeration/spring-cloud-function.md)
+  * [Page](web-enumeration/page.md)
   * [Laravel](web-enumeration/laravel.md)
   * [Strapi](web-enumeration/strapi.md)
   * [HTTP](web-enumeration/http.md)
