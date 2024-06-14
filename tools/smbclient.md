@@ -15,13 +15,12 @@ smbmap:
 
 ## OPERATIONS
 
-<pre class="language-bash"><code class="lang-bash">allinfo &#x3C;FILE>: The client will request that the server return all 
+<pre class="language-bash"><code class="lang-bash">allinfo <FILE>: The client will request that the server return all 
 known information about a file or directory (including streams).
 
-<strong>get &#x3C;REMOTE FILE> &#x3C;LOCAL FILE>: Copy the file called remote file name from 
-</strong><strong>the server to the machine running the client. If specified, name the local 
-</strong><strong>copy local file name. Note that all transfers in smbclient are binary.
-</strong>
+get <REMOTE FILE> <LOCAL FILE>: Copy the file called remote file name from 
+the server to the machine running the client. If specified, name the local 
+copy local file name. Note that all transfers in smbclient are binary.
 </code></pre>
 
 
