@@ -1,23 +1,20 @@
 # Windows Commands
 
-Create user to domain
+Create user and add to domain
 
 ```powershell
-net user john abc123! /add /domain
+net user <USER> abc123! /add /domain
 ```
-
-
 
 Add user to group
 
 ```powershell
-net group "Exchange Windows Permissions" john /add
+net group "Exchange Windows Permissions" <USER> /add
 ```
-
-
 
 Add user to local group
 
 ```powershell
-net localgroup "Remote Management Users" john /add
+net localgroup "Remote Management Users" <USER> /add
+#Tip: the administrators localgroup have the admin rights! =D
 ```
