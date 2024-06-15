@@ -1,5 +1,7 @@
 # cewl
 
+Generate wordlist from a web page
+
 ```bash
-cewl 10.10.10.191 > wordlist.txt
+cewl <URL> wordlist.txt
 ```
