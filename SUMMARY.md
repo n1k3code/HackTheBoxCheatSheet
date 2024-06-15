@@ -62,7 +62,6 @@
 * [Tools](tools/README.md)
   * [ILSpy](tools/ilspy.md)
   * [Hashcat](tools/hashcat.md)
-  * [Misc](tools/misc.md)
   * [wfuzz](tools/wfuzz.md)
   * [smbmap](tools/smbmap.md)
   * [rpcclient](tools/rpcclient.md)
