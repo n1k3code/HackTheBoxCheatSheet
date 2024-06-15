@@ -35,7 +35,6 @@
     * [Laravel](web-enumeration/vulnerabilities/laravel.md)
     * [Strapi](web-enumeration/vulnerabilities/strapi.md)
     * [Tomcat](web-enumeration/vulnerabilities/tomcat.md)
-  * [Page](web-enumeration/page.md)
   * [HTTP](web-enumeration/http.md)
   * [SSTI](web-enumeration/ssti.md)
   * [Files](web-enumeration/files.md)
