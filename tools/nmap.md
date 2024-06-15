@@ -30,19 +30,9 @@ nmap $ip -sV -sC -p $(sudo nmap -p- -sS -T4 -Pn $ip | grep ^[0-9] | cut -d '/' -
 ip=10.129.128.171;nmap $ip -sV -sC -p $(sudo nmap -p- -sS -T4 -Pn $ip | grep ^[0-9] | cut -d '/' -f 1 | tr '\n', ',' | sed 's/,$//')
 ```
 
-
-
 **Scan all ports with min-rate**
 
 ```bash
 ports=$(nmap -p- --min-rate=1000 -T4 10.10.10.215 | grep ^[0-9] | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//) 
 nmap -p$ports -sC -sV 10.10.10.215
 ```
-
-\
-
-
-
-
-
-

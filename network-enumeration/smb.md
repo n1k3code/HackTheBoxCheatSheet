@@ -20,20 +20,20 @@ smb: /> get creds.txt
 
 List shares
 
-```
+```bash
 smbclient -L \\\\<IP>\\
 ```
 
-```
+```bash
  smbclient -L \\\\10.129.178.26\\
 ```
 
 Connect to share
 
-```
+```bash
 smbclient -L \\\\<IP>\\<SHARE_NAME>
 ```
 
-```
+```bash
 smbclient \\\\10.129.178.26\\support-tools
 ```
