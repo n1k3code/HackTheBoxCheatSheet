@@ -1,2 +1,5 @@
 # Groups
 
+```powershell
+whoami /groups
+```
